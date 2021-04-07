@@ -1,0 +1,10 @@
+C:\Users\Máté\source\repos\0407muveletek\0407muveletek\bin\Debug\0407muveletek.exe.config
+C:\Users\Máté\source\repos\0407muveletek\0407muveletek\bin\Debug\0407muveletek.exe
+C:\Users\Máté\source\repos\0407muveletek\0407muveletek\bin\Debug\0407muveletek.pdb
+C:\Users\Máté\source\repos\0407muveletek\0407muveletek\obj\Debug\0407muveletek.csprojAssemblyReference.cache
+C:\Users\Máté\source\repos\0407muveletek\0407muveletek\obj\Debug\_0407muveletek.Form1.resources
+C:\Users\Máté\source\repos\0407muveletek\0407muveletek\obj\Debug\_0407muveletek.Properties.Resources.resources
+C:\Users\Máté\source\repos\0407muveletek\0407muveletek\obj\Debug\0407muveletek.csproj.GenerateResource.cache
+C:\Users\Máté\source\repos\0407muveletek\0407muveletek\obj\Debug\0407muveletek.csproj.CoreCompileInputs.cache
+C:\Users\Máté\source\repos\0407muveletek\0407muveletek\obj\Debug\0407muveletek.exe
+C:\Users\Máté\source\repos\0407muveletek\0407muveletek\obj\Debug\0407muveletek.pdb

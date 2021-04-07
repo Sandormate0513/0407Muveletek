@@ -16,30 +16,33 @@ namespace _0407muveletek
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        int szam1;
+        int szam2;
+        int megoldas;
+        private void ujBT_Click(object sender, EventArgs e)
         {
-
+            
+            if (muveletekCB.SelectedItem.Equals("Osztás"))
+            {
+                szam1 = 44;
+                szam2 = 4;
+                megoldas = 11;
+                feladatTB.Text = $"{szam1} / {szam2} = ";
+            }
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ellBT_Click(object sender, EventArgs e)
         {
+            int be = Int32.Parse(valaszTB.Text);
+            if (be == megoldas)
+            {
+                visszajelTB.Text = "Jó megoldás";
 
+            }
+            else {
+                visszajelTB.Text = "nem jó megoldás";
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
