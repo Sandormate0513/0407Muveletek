@@ -40,6 +40,10 @@ namespace _0407muveletek
             this.megoldasBT = new System.Windows.Forms.Button();
             this.muveletekCB = new System.Windows.Forms.ComboBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.muveletekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.muveletekTSCB = new System.Windows.Forms.ToolStripComboBox();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ujBT
@@ -68,7 +72,6 @@ namespace _0407muveletek
             this.valaszTB.Name = "valaszTB";
             this.valaszTB.Size = new System.Drawing.Size(100, 22);
             this.valaszTB.TabIndex = 5;
-            this.valaszTB.Text = "49";
             // 
             // ellBT
             // 
@@ -112,14 +115,14 @@ namespace _0407muveletek
             this.statLB.ItemHeight = 16;
             this.statLB.Items.AddRange(new object[] {
             "Statisztika:",
-            "összeadás:\t10 / 10",
-            "kivonás:\t\t10 / 6",
-            "Szorzás:\t\t10 / 10",
-            "Osztás:\t\t10 / 4",
-            "Összesen:\t40 / 30"});
+            "összeadás:\t0 / 0",
+            "kivonás:\t\t0 / 0",
+            "Szorzás:\t\t0 / 0",
+            "Osztás:\t\t0 / 0",
+            "Összesen:\t0 / 0"});
             this.statLB.Location = new System.Drawing.Point(442, 61);
             this.statLB.Name = "statLB";
-            this.statLB.Size = new System.Drawing.Size(183, 132);
+            this.statLB.Size = new System.Drawing.Size(235, 132);
             this.statLB.TabIndex = 11;
             // 
             // megoldasBT
@@ -144,12 +147,44 @@ namespace _0407muveletek
             this.muveletekCB.Size = new System.Drawing.Size(121, 24);
             this.muveletekCB.TabIndex = 0;
             this.muveletekCB.Text = "Müveletek";
+            this.muveletekCB.SelectedIndexChanged += new System.EventHandler(this.muveletekCB_SelectedIndexChanged);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.muveletekToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(686, 28);
+            this.menuStrip1.TabIndex = 13;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // muveletekToolStripMenuItem
+            // 
+            this.muveletekToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.muveletekTSCB});
+            this.muveletekToolStripMenuItem.Name = "muveletekToolStripMenuItem";
+            this.muveletekToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
+            this.muveletekToolStripMenuItem.Text = "Műveletek";
+            // 
+            // muveletekTSCB
+            // 
+            this.muveletekTSCB.Items.AddRange(new object[] {
+            "Összeadás",
+            "Kivonás",
+            "Szorzás",
+            "Osztás"});
+            this.muveletekTSCB.Name = "muveletekTSCB";
+            this.muveletekTSCB.Size = new System.Drawing.Size(121, 28);
+            this.muveletekTSCB.Text = "Műveletek";
+            this.muveletekTSCB.Click += new System.EventHandler(this.muveletekTSCB_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 362);
+            this.ClientSize = new System.Drawing.Size(686, 361);
             this.Controls.Add(this.megoldasBT);
             this.Controls.Add(this.statLB);
             this.Controls.Add(this.feladatLB);
@@ -160,8 +195,12 @@ namespace _0407muveletek
             this.Controls.Add(this.feladatTB);
             this.Controls.Add(this.ujBT);
             this.Controls.Add(this.muveletekCB);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Műveletek";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +218,9 @@ namespace _0407muveletek
         private System.Windows.Forms.Button megoldasBT;
         private System.Windows.Forms.ComboBox muveletekCB;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem muveletekToolStripMenuItem;
+        private System.Windows.Forms.ToolStripComboBox muveletekTSCB;
     }
 }
 
